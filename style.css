@@ -39,7 +39,6 @@ main {
     display: block;
     width: 120px;
     height: 120px;
-    /* 保留完整人像並縮遠取景，讓脖子與部分肩膀露出。 */
     object-fit: contain;
     object-position: center;
     padding: 8px;
@@ -238,14 +237,19 @@ article::after, section::after {
     }
 
     nav {
+        max-width: 360px;
+        margin: 24px auto 0;
         text-align: center;
     }
 
     nav a {
         display: inline-block;
-        width: 48%;
-        padding: 8px;
-        text-align: left;
+        width: 46%;
+        margin: 4px 1%;
+        padding: 10px 4px;
+        border: 1px solid #365767;
+        border-radius: 4px;
+        text-align: center;
     }
 
     nav span {
